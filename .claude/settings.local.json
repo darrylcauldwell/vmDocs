@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:techdocs.broadcom.com)",
+      "Bash(swift build:*)",
+      "Bash(xcodebuild:*)",
+      "Bash(wc:*)",
+      "Bash(security find-identity:*)",
+      "Bash(python3:*)",
+      "Bash(ln:*)",
+      "Bash(hdiutil create:*)",
+      "Bash(open \"https://developer.apple.com/account/resources/certificates/add\")",
+      "Bash(open:*)"
+    ]
+  }
+}

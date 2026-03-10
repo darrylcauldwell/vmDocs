@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FASSETS /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = SASSETS; };
+		F001 /* vmDocsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = S001; };
+		F002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = S002; };
+		F003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = S003; };
+		F004 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = S004; };
+		F005 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = S005; };
+		F006 /* ConversationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = S006; };
+		F007 /* DocumentLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = S007; };
+		F008 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = S008; };
+		F009 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = S009; };
+		F010 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = S010; };
+		F011 /* WatchFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = S011; };
+		F012 /* VMwareProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = S012; };
+		F013 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = S013; };
+		F014 /* DocumentChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = S014; };
+		F015 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = S015; };
+		F016 /* OllamaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = S016; };
+		F017 /* SwiftDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = S017; };
+		FWPKG /* vmDocsCore in Frameworks */ = {isa = PBXBuildFile; productRef = PKGPROD; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		PRODREF /* vmDocs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vmDocs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		SASSETS /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		S001 /* vmDocsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vmDocsApp.swift; sourceTree = "<group>"; };
+		S002 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		S003 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		S004 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		S005 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		S006 /* ConversationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationManager.swift; sourceTree = "<group>"; };
+		S007 /* DocumentLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentLibraryView.swift; sourceTree = "<group>"; };
+		S008 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		S009 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		S010 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		S011 /* WatchFolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFolderView.swift; sourceTree = "<group>"; };
+		S012 /* VMwareProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMwareProduct.swift; sourceTree = "<group>"; };
+		S013 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		S014 /* DocumentChunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentChunk.swift; sourceTree = "<group>"; };
+		S015 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		S016 /* OllamaAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OllamaAPIClient.swift; sourceTree = "<group>"; };
+		S017 /* SwiftDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataModels.swift; sourceTree = "<group>"; };
+		PKGREF /* vmDocsCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = vmDocsCore; path = vmDocsCore; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FWPHASE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FWPKG /* vmDocsCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+		RESPHASE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FASSETS /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXGroup section */
+		ROOT = {
+			isa = PBXGroup;
+			children = (
+				VMDOCS /* vmDocs */,
+				PKGREF /* vmDocsCore */,
+				PRODUCTS /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		PRODUCTS /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				PRODREF /* vmDocs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		VMDOCS /* vmDocs */ = {
+			isa = PBXGroup;
+			children = (
+				APPGRP /* App */,
+				COREGRP /* Core */,
+				FEATGRP /* Features */,
+				SASSETS /* Assets.xcassets */,
+			);
+			path = vmDocs;
+			sourceTree = "<group>";
+		};
+		APPGRP /* App */ = {
+			isa = PBXGroup;
+			children = (
+				S001 /* vmDocsApp.swift */,
+				S002 /* AppState.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		COREGRP /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DOMGRP /* Domain */,
+				DATAGRP /* Data */,
+				INFRAGRP /* Infrastructure */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DOMGRP /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				ENTGRP /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		ENTGRP /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				S012 /* VMwareProduct.swift */,
+				S013 /* Document.swift */,
+				S014 /* DocumentChunk.swift */,
+				S015 /* ChatMessage.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DATAGRP /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DSGRP /* DataSources */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DSGRP /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				REMGRP /* Remote */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		REMGRP /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				S016 /* OllamaAPIClient.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		INFRAGRP /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				PERSGRP /* Persistence */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		PERSGRP /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				S017 /* SwiftDataModels.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		FEATGRP /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CHATGRP /* Chat */,
+				DOCLIBGRP /* DocumentLibrary */,
+				HELPGRP /* Help */,
+				INGGRP /* Ingestion */,
+				ONBGRP /* Onboarding */,
+				SETGRP /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CHATGRP /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				CHATVWGRP /* Views */,
+				CHATVMGRP /* ViewModels */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		CHATVWGRP /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				S003 /* ContentView.swift */,
+				S004 /* ChatView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CHATVMGRP /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				S005 /* ChatViewModel.swift */,
+				S006 /* ConversationManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DOCLIBGRP /* DocumentLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				DOCLIBVWGRP /* Views */,
+			);
+			path = DocumentLibrary;
+			sourceTree = "<group>";
+		};
+		DOCLIBVWGRP /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				S007 /* DocumentLibraryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		HELPGRP /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				HELPVWGRP /* Views */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		HELPVWGRP /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				S009 /* HelpView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		INGGRP /* Ingestion */ = {
+			isa = PBXGroup;
+			children = (
+				INGVWGRP /* Views */,
+			);
+			path = Ingestion;
+			sourceTree = "<group>";
+		};
+		INGVWGRP /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				S011 /* WatchFolderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ONBGRP /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				ONBVWGRP /* Views */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		ONBVWGRP /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				S010 /* OnboardingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		SETGRP /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				SETVWGRP /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		SETVWGRP /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				S008 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		MAINTGT /* vmDocs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = TGTCFGS;
+			buildPhases = (
+				SRCPHASE /* Sources */,
+				FWPHASE /* Frameworks */,
+				RESPHASE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vmDocs;
+			packageProductDependencies = (
+				PKGPROD /* vmDocsCore */,
+			);
+			productName = vmDocs;
+			productReference = PRODREF /* vmDocs.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		MAINPROJ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					MAINTGT = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = PROJCFGS;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ROOT;
+			packageReferences = (
+				PKGLOCAL /* vmDocsCore */,
+			);
+			productRefGroup = PRODUCTS;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				MAINTGT /* vmDocs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SRCPHASE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F001 /* vmDocsApp.swift in Sources */,
+				F002 /* AppState.swift in Sources */,
+				F003 /* ContentView.swift in Sources */,
+				F004 /* ChatView.swift in Sources */,
+				F005 /* ChatViewModel.swift in Sources */,
+				F006 /* ConversationManager.swift in Sources */,
+				F007 /* DocumentLibraryView.swift in Sources */,
+				F008 /* SettingsView.swift in Sources */,
+				F009 /* HelpView.swift in Sources */,
+				F010 /* OnboardingView.swift in Sources */,
+				F011 /* WatchFolderView.swift in Sources */,
+				F012 /* VMwareProduct.swift in Sources */,
+				F013 /* Document.swift in Sources */,
+				F014 /* DocumentChunk.swift in Sources */,
+				F015 /* ChatMessage.swift in Sources */,
+				F016 /* OllamaAPIClient.swift in Sources */,
+				F017 /* SwiftDataModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DBGTGT /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = "vmDocs/vmDocs.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = N6BK2WX94Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = vmDocs;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.vmdocs.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		RELTGT /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = "vmDocs/vmDocs.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = N6BK2WX94Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = vmDocs;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.vmdocs.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DBGPROJ /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		RELPROJ /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		TGTCFGS /* Build configuration list for PBXNativeTarget "vmDocs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBGTGT /* Debug */,
+				RELTGT /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		PROJCFGS /* Build configuration list for PBXProject "vmDocs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBGPROJ /* Debug */,
+				RELPROJ /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		PKGLOCAL /* vmDocsCore */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = vmDocsCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		PKGPROD /* vmDocsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = PKGLOCAL /* vmDocsCore */;
+			productName = vmDocsCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = MAINPROJ /* Project object */;
+}
